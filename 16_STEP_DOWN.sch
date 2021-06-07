@@ -338,4 +338,6 @@ Wire Wire Line
 Wire Wire Line
 	5125 1350 5125 2175
 Connection ~ 5500 2175
+Text Notes 2525 2425 0    50   ~ 0
+LMR14203XMK     C132000\naussi compatible\nC108761\nC125906\nC193985\nC89300\nC93176
 $EndSCHEMATC
