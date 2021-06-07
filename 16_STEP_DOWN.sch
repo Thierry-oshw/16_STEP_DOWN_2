@@ -1,0 +1,341 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 606CE97F
+P 1800 6725
+F 0 "J1" H 1880 6767 50  0000 L CNN
+F 1 "Conn_01x01" H 1880 6676 50  0000 L CNN
+F 2 "Chimere:Castellated_conn" H 1800 6725 50  0001 C CNN
+F 3 "~" H 1800 6725 50  0001 C CNN
+	1    1800 6725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 606CFC19
+P 1800 7075
+F 0 "J4" H 1880 7117 50  0000 L CNN
+F 1 "Conn_01x01" H 1880 7026 50  0000 L CNN
+F 2 "Chimere:Castellated_conn" H 1800 7075 50  0001 C CNN
+F 3 "~" H 1800 7075 50  0001 C CNN
+	1    1800 7075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1525 7075 1600 7075
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 606D5E52
+P 1800 6900
+F 0 "J3" H 1880 6942 50  0000 L CNN
+F 1 "Conn_01x01" H 1880 6851 50  0000 L CNN
+F 2 "Chimere:Castellated_conn" H 1800 6900 50  0001 C CNN
+F 3 "~" H 1800 6900 50  0001 C CNN
+	1    1800 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1525 6725 1600 6725
+Wire Wire Line
+	1525 6900 1600 6900
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 6079B82F
+P 3150 6750
+F 0 "J2" H 3230 6792 50  0000 L CNN
+F 1 "Conn_01x01" H 3230 6701 50  0000 L CNN
+F 2 "Chimere:Castellated_conn" H 3150 6750 50  0001 C CNN
+F 3 "~" H 3150 6750 50  0001 C CNN
+	1    3150 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 6079BCA3
+P 1800 7250
+F 0 "J5" H 1880 7292 50  0000 L CNN
+F 1 "Conn_01x01" H 1880 7201 50  0000 L CNN
+F 2 "Chimere:Castellated_conn" H 1800 7250 50  0001 C CNN
+F 3 "~" H 1800 7250 50  0001 C CNN
+	1    1800 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1525 7250 1600 7250
+Text GLabel 1525 6725 0    50   Input ~ 0
+GND
+Text GLabel 1525 7075 0    50   Input ~ 0
+5V
+$Comp
+L Device:C C3
+U 1 1 60AF6DD6
+P 7125 1150
+F 0 "C3" H 7240 1196 50  0000 L CNN
+F 1 "100nF" H 7240 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7163 1000 50  0001 C CNN
+F 3 "C14663" H 7125 1150 50  0001 C CNN
+	1    7125 1150
+	1    0    0    -1  
+$EndComp
+Text GLabel 7075 1000 0    50   Input ~ 0
+5V
+Text GLabel 7075 1300 0    50   Input ~ 0
+GND
+Wire Wire Line
+	7075 1000 7125 1000
+Wire Wire Line
+	7075 1300 7125 1300
+Wire Wire Line
+	2875 6750 2950 6750
+Text GLabel 2875 6750 0    50   Input ~ 0
+GND
+Text GLabel 1525 6900 0    50   Input ~ 0
+V_BRUT
+Text GLabel 1525 7250 0    50   Input ~ 0
+EN
+Text Notes 8075 2250 0    50   ~ 0
+inductance 10uH\nMWSA0402S-100MT\nC408339\nSMD-4.2*4.4*2.0
+$Comp
+L Device:C C4
+U 1 1 60B0B3C0
+P 7700 1175
+F 0 "C4" H 7815 1221 50  0000 L CNN
+F 1 "10uF/50V" H 7815 1130 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 7738 1025 50  0001 C CNN
+F 3 "C337485" H 7700 1175 50  0001 C CNN
+	1    7700 1175
+	1    0    0    -1  
+$EndComp
+Text GLabel 7650 1025 0    50   Input ~ 0
+5V
+Text GLabel 7650 1325 0    50   Input ~ 0
+GND
+Wire Wire Line
+	7650 1025 7700 1025
+Wire Wire Line
+	7650 1325 7700 1325
+$Comp
+L Device:C C2
+U 1 1 60B0BFF9
+P 2650 1100
+F 0 "C2" H 2765 1146 50  0000 L CNN
+F 1 "10uF/50V" H 2765 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 2688 950 50  0001 C CNN
+F 3 "C337485" H 2650 1100 50  0001 C CNN
+	1    2650 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 2600 1250 0    50   Input ~ 0
+GND
+Wire Wire Line
+	2600 950  2650 950 
+Wire Wire Line
+	2600 1250 2650 1250
+Text GLabel 1300 1125 0    50   Input ~ 0
+V_BRUT
+Text GLabel 2600 950  0    50   Input ~ 0
+V_BRUT_P
+Text GLabel 1700 1125 2    50   Input ~ 0
+V_BRUT_P
+$Comp
+L Device:C C1
+U 1 1 60B0EA9D
+P 5400 950
+F 0 "C1" H 5515 996 50  0000 L CNN
+F 1 "100nF" H 5515 905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5438 800 50  0001 C CNN
+F 3 "C14663" H 5400 950 50  0001 C CNN
+	1    5400 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_ALT D2
+U 1 1 60B0F6BE
+P 1500 1125
+F 0 "D2" H 1500 908 50  0000 C CNN
+F 1 "1N5819W" H 1500 999 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 1500 1125 50  0001 C CNN
+F 3 "C369930" H 1500 1125 50  0001 C CNN
+	1    1500 1125
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 1125 1350 1125
+Wire Wire Line
+	1650 1125 1700 1125
+Text GLabel 8425 900  0    50   Input ~ 0
+5V
+Text GLabel 8400 1550 0    50   Input ~ 0
+GND
+$Comp
+L Device:LED_ALT D1
+U 1 1 60B1373B
+P 8475 1050
+F 0 "D1" V 8514 932 50  0000 R CNN
+F 1 "LED_ALT" V 8423 932 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 8475 1050 50  0001 C CNN
+F 3 "C2286" H 8475 1050 50  0001 C CNN
+	1    8475 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60B1434A
+P 8475 1400
+F 0 "R1" H 8545 1446 50  0000 L CNN
+F 1 "10k" H 8545 1355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8405 1400 50  0001 C CNN
+F 3 "C25804" H 8475 1400 50  0001 C CNN
+	1    8475 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8425 900  8475 900 
+Wire Wire Line
+	8400 1550 8475 1550
+Wire Wire Line
+	8475 1200 8475 1250
+$Comp
+L Device:L L1
+U 1 1 60B193A9
+P 6075 1150
+F 0 "L1" V 5894 1150 50  0000 C CNN
+F 1 "MWSA0402S-100MT" V 5985 1150 50  0000 C CNN
+F 2 "Chimere:L_Sunlord_MWSA0402S_4.2x4.4x2.0mm" H 6075 1150 50  0001 C CNN
+F 3 "C408339" H 6075 1150 50  0001 C CNN
+	1    6075 1150
+	0    1    1    0   
+$EndComp
+Text GLabel 4050 950  0    50   Input ~ 0
+V_BRUT_P
+Text GLabel 6275 1150 2    50   Input ~ 0
+5V
+Text GLabel 4675 1550 2    50   Input ~ 0
+GND
+Text GLabel 4050 1150 0    50   Input ~ 0
+EN
+$Comp
+L Regulator_Switching:LMR14206 U1
+U 1 1 60BDFDF5
+P 4625 1150
+F 0 "U1" H 4625 1617 50  0000 C CNN
+F 1 "LMR14203XMK" H 4625 1526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4625 650 50  0001 C CIN
+F 3 "C132000" H 4225 1600 50  0001 C CNN
+	1    4625 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 950  4125 950 
+Wire Wire Line
+	4050 1150 4125 1150
+Wire Wire Line
+	4625 1550 4675 1550
+Wire Wire Line
+	6225 1150 6275 1150
+Wire Wire Line
+	5125 950  5250 950 
+Wire Wire Line
+	5550 950  5550 1150
+Wire Wire Line
+	5550 1150 5125 1150
+Wire Wire Line
+	5550 1150 5775 1150
+Connection ~ 5550 1150
+$Comp
+L Device:D_ALT D3
+U 1 1 60BF5F12
+P 5775 1425
+F 0 "D3" H 5775 1208 50  0000 C CNN
+F 1 "1N5819W" H 5775 1299 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 5775 1425 50  0001 C CNN
+F 3 "C369930" H 5775 1425 50  0001 C CNN
+	1    5775 1425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5775 1275 5775 1150
+Connection ~ 5775 1150
+Wire Wire Line
+	5775 1150 5925 1150
+Text GLabel 5850 1575 2    50   Input ~ 0
+GND
+Wire Wire Line
+	5775 1575 5850 1575
+$Comp
+L Device:R R3
+U 1 1 60BF8021
+P 5775 2450
+F 0 "R3" H 5845 2496 50  0000 L CNN
+F 1 "1020" H 5845 2405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5705 2450 50  0001 C CNN
+F 3 "~" H 5775 2450 50  0001 C CNN
+	1    5775 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60BF854D
+P 5775 1925
+F 0 "R2" H 5845 1971 50  0000 L CNN
+F 1 "5620" H 5845 1880 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5705 1925 50  0001 C CNN
+F 3 "~" H 5775 1925 50  0001 C CNN
+	1    5775 1925
+	1    0    0    -1  
+$EndComp
+Text GLabel 5675 2600 0    50   Input ~ 0
+GND
+Wire Wire Line
+	5675 2600 5775 2600
+Text GLabel 5875 1750 2    50   Input ~ 0
+5V
+$Comp
+L Device:C C5
+U 1 1 60BFD324
+P 5500 1925
+F 0 "C5" H 5300 1975 50  0000 L CNN
+F 1 "100nF" H 5225 1825 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5538 1775 50  0001 C CNN
+F 3 "C14663" H 5500 1925 50  0001 C CNN
+	1    5500 1925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5875 1750 5775 1750
+Wire Wire Line
+	5500 1750 5500 1775
+Wire Wire Line
+	5775 1775 5775 1750
+Connection ~ 5775 1750
+Wire Wire Line
+	5775 1750 5500 1750
+Wire Wire Line
+	5775 2075 5775 2175
+Wire Wire Line
+	5500 2075 5500 2175
+Wire Wire Line
+	5500 2175 5775 2175
+Connection ~ 5775 2175
+Wire Wire Line
+	5775 2175 5775 2300
+Wire Wire Line
+	5500 2175 5125 2175
+Wire Wire Line
+	5125 1350 5125 2175
+Connection ~ 5500 2175
+$EndSCHEMATC

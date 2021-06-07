@@ -1,0 +1,9 @@
+Reference, Quantity, Value, Footprint, Datasheet
+C1 C3 C4 ,3,"100nF","Capacitor_SMD:C_0603_1608Metric","C14663"
+C2 C5 ,2,"10uF/50V","Capacitor_SMD:C_1210_3225Metric","C337485"
+D1 ,1,"1N5819W","Diode_SMD:D_SOD-123F","C369930"
+D2 ,1,"LED_ALT","Diode_SMD:D_0603_1608Metric","C2286"
+J1 J2 J3 J4 J5 ,5,"Conn_01x01","Chimere:Castellated_conn","~"
+L1 ,1,"MWSA0402S-100MT","Chimere:L_Sunlord_MWSA0402S_4.2x4.4x2.0mm","C408339"
+R1 ,1,"10k","Resistor_SMD:R_0603_1608Metric","C25804"
+U1 ,1,"SCT2325","Package_TO_SOT_SMD:TSOT-23-6_HandSoldering","C509064"
